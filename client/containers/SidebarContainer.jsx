@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 import SidebarCard from '../components/SidebarCard.jsx';
 import NewPlans from '../components/NewPlans.jsx';
 
-import * as actions from '../actions/actions.js';
+import * as actions from '../actions/actions.ts';
 
 const mapDispatchToProps = (dispatch) => ({
   getActivities: (tripId) => dispatch(actions.getActivities(tripId)),

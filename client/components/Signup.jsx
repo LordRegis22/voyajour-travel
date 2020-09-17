@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import * as actions from '../actions/actions';
+import * as actions from '../actions/actions.ts';
 
 const mapStateToProps = (state) => ({
   firstName: state.form.signUp.firstName,
@@ -38,62 +38,62 @@ const Signup = ({
             handleSubmitSignup(userInput);
           }}
         >
-          <Form.Group controlId="firstNameInput">
+          <Form.Group controlId='firstNameInput'>
             <Form.Label>First Name</Form.Label>
             <Form.Control
-              name="firstName"
-              type="text"
-              placeholder="Enter First Name"
+              name='firstName'
+              type='text'
+              placeholder='Enter First Name'
               onChange={(e) => {
                 handleInput(e.target);
               }}
             />
           </Form.Group>
-          <Form.Group controlId="emailInput">
+          <Form.Group controlId='emailInput'>
             <Form.Label>Email</Form.Label>
             <Form.Control
-              name="email"
-              type="email"
-              placeholder="Enter Email"
+              name='email'
+              type='email'
+              placeholder='Enter Email'
               onChange={(e) => {
                 handleInput(e.target);
               }}
             />
           </Form.Group>
-          <Form.Group controlId="usernameInput">
+          <Form.Group controlId='usernameInput'>
             <Form.Label>Username</Form.Label>
             <Form.Control
-              name="username"
-              type="text"
-              placeholder="Enter Username"
+              name='username'
+              type='text'
+              placeholder='Enter Username'
               onChange={(e) => {
                 handleInput(e.target);
               }}
             />
           </Form.Group>
-          <Form.Group controlId="passwordInput">
+          <Form.Group controlId='passwordInput'>
             <Form.Label>Password</Form.Label>
             <Form.Control
-              name="password"
-              type="password"
-              placeholder="Enter Password"
+              name='password'
+              type='password'
+              placeholder='Enter Password'
               onChange={(e) => {
                 handleInput(e.target);
               }}
             />
           </Form.Group>
-          <Form.Group controlId="confirmPasswordInput">
+          <Form.Group controlId='confirmPasswordInput'>
             <Form.Label>Confirm Password</Form.Label>
             <Form.Control
-              name="confirmedPassword"
-              type="password"
-              placeholder="Confirm Password"
+              name='confirmedPassword'
+              type='password'
+              placeholder='Confirm Password'
               onChange={(e) => {
                 handleInput(e.target);
               }}
             />
           </Form.Group>
-          <Button variant="outline-danger" type="submit">
+          <Button variant='outline-danger' type='submit'>
             Sign Up
           </Button>
         </Form>

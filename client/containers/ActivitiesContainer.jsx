@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Button } from 'react-bootstrap';
-import Activity from '../components/Activity.jsx';
+import Activity from '../components/Activity.tsx';
 import ActivityFormModal from '../components/AddActivityModal.jsx';
-import * as actions from '../actions/actions';
+import * as actions from '../actions/actions.ts';
 
 const mapDispatchToProps = (dispatch) => ({
   handleFormInput: (newState) => dispatch(actions.activityFormInput(newState)),

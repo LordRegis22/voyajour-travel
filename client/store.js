@@ -4,7 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 // if you want to use devtools, you need to combine redux-thunk's applyMiddleware
 // and composeWithDevTools
 import thunk from 'redux-thunk';
-import combinedReducers from './reducers/index';
+import combinedReducers from './reducers/index.ts';
 
 // store will hold our reducers and always reflect the one source of truth
 const store = createStore(

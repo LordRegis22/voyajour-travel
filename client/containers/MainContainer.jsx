@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import * as actions from '../actions/actions';
+import * as actions from '../actions/actions.ts';
 import Login from '../components/Login.jsx';
 import NavContainer from './NavContainer.jsx';
 import SidebarContainer from './SidebarContainer.jsx';
@@ -26,7 +26,7 @@ const MainContainer = (props) => {
   return (
     <div>
       <NavContainer />
-      <div className="body-container">
+      <div className='body-container'>
         <SidebarContainer />
         <ActivitiesContainer />
       </div>

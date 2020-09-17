@@ -1,6 +1,6 @@
 // import our actiontypes from constants/actionsTypes;
 import axios from 'axios';
-import * as types from '../constants/actionTypes';
+import * as types from '../constants/actionTypes.ts';
 // our initialState for this reducer needs some cleaning up. We have this one
 // and formReducer which are combined in the index.js file with the combineReducer method
 
@@ -9,65 +9,11 @@ const initialState = {
   activeLocationId: 0,
   count: 0,
   // trips contains objects with keys: id(unique to location), location(str), country(str)
-  trips: [
-    // {
-    //   locationId: 1,
-    //   location: 'LA',
-    //   country: 'USA',
-    // },
-    // {
-    //   locationId: 2,
-    //   location: 'NYC',
-    //   country: 'USA',
-    // },
-    // {
-    //   locationId: 3,
-    //   location: 'Munich',
-    //   country: 'GERMANY',
-    // },
-    // {
-    //   locaitonId: 4,
-    //   location: 'Paris',
-    //   country: 'FRANCE',
-    // },
-  ],
+  trips: [],
   // activities contains objects with keys: description, notes, address, link, (strs); completed(bool); locationID (num correlating to location; id (num, unique to activity))
   activities: [],
   //holds all activities so that
-  activityStore: [
-    // {
-    //   location_id: 1,
-    //   description: 'Go to Guisados',
-    //   notes: 'get the al pastor',
-    //   address: '123 Sepulveda',
-    //   link: 'www.guisados.com',
-    //   completed: false,
-    // },
-    // {
-    //   location_id: 1,
-    //   description: 'Guggenheim',
-    //   notes: 'Dont forget a coat',
-    //   address: '456 Tram on a Hill way',
-    //   link: 'guggenheim.public',
-    //   completed: false,
-    // },
-    // {
-    //   location_id: 2,
-    //   description: 'Oktoberfest',
-    //   notes: 'Hofbräu House',
-    //   address: '2398 Straße Weiß',
-    //   link: 'hofbrau.de',
-    //   completed: false,
-    // },
-    // {
-    //   location_id: 3,
-    //   description: 'Eiffel Tower',
-    //   notes: 'Do things there',
-    //   address: '2983 Rue Tor Eifel',
-    //   link: 'www.eiffel.fr',
-    //   completed: false,
-    // },
-  ],
+  activityStore: [],
 };
 
 const travelReducer = (state = initialState, action) => {
