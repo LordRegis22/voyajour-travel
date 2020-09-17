@@ -1,3 +1,8 @@
+//import typescript namespace 
+
+// let actionTypes = require('./actionTypes')
+
+
 // here we define our constants
 
 const ADD_COUNT = 'ADD_COUNT';
